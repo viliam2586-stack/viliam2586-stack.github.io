@@ -13,7 +13,7 @@ Celý dizajn je postavený ako počítačová sieť:
 - **Projekty ako smerovacia tabuľka:** kliknutím na projekt sa otvorí jeho detail s popisom a obrázkom.
 - **Technológie sú odkazy:** napríklad Python, React alebo SQLite sa otvoria v novej karte na oficiálnej stránke. Pojmy ako NLP alebo OSPF vedú na Wikipédiu.
 
-Stránka funguje aj na mobile a dá sa ovládať klávesnicou. Animácie sa riadia nastavením systému (obmedzenie pohybu), ale návštevník si ich môže prepínačom zapnúť alebo vypnúť. Voľba režimu aj animácií sa pamätá v prehliadači.
+Stránka funguje aj na mobile a dá sa ovládať klávesnicou. Animácie sú predvolene vždy zapnuté a návštevník si ich môže vypnúť prepínačom „Animácie“. Voľba režimu aj animácií sa pamätá v prehliadači.
 
 ## Technológie
 
