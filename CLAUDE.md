@@ -8,6 +8,8 @@ Personal portfolio site for Viliam Džubara, a computer-networks engineering stu
 
 The app lives in `site/`; the parent `CV_site/` folder only holds an empty stray `package-lock.json`. Run all commands from `site/`.
 
+`site/` is the git repository root. Deployment is GitHub Pages via `.github/workflows/deploy.yml`: every push to `main` runs `npm ci`, `npm run lint`, `npm run build` and publishes `dist/`. The repo is the user site `viliam2586-stack/viliam2586-stack.github.io`, served at the domain root (https://viliam2586-stack.github.io), which is why absolute paths like `/prefs.js` and `/favicon.svg` work. Moving to a project repo (served under `/<repo>/`) would require setting Vite `base` and making those paths relative.
+
 ## Commands
 
 ```
