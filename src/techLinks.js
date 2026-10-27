@@ -1,0 +1,28 @@
+// Kam vedie kliknutie na technológiu. Nástroje a jazyky majú oficiálnu stránku,
+// pojmy (NLP, OSPF, VLAN...) odkazujú na Wikipédiu. Čo tu chýba, zobrazí sa ako
+// obyčajný štítok bez odkazu (napr. Slovenčina).
+export const techLinks = {
+  Python: 'https://www.python.org/',
+  Flask: 'https://flask.palletsprojects.com/',
+  React: 'https://react.dev/',
+  SQLite: 'https://www.sqlite.org/',
+  NLP: 'https://en.wikipedia.org/wiki/Natural_language_processing',
+  Java: 'https://dev.java/',
+  OOP: 'https://en.wikipedia.org/wiki/Object-oriented_programming',
+  'Packet Tracer': 'https://www.netacad.com/cisco-packet-tracer',
+  'Cisco Packet Tracer': 'https://www.netacad.com/cisco-packet-tracer',
+  VLAN: 'https://en.wikipedia.org/wiki/VLAN',
+  OSPF: 'https://en.wikipedia.org/wiki/Open_Shortest_Path_First',
+  'TCP/IP': 'https://en.wikipedia.org/wiki/Internet_protocol_suite',
+  GNS3: 'https://www.gns3.com/',
+  Linux: 'https://www.kernel.org/',
+  'Windows Server': 'https://www.microsoft.com/windows-server',
+  VirtualBox: 'https://www.virtualbox.org/',
+  VMware: 'https://www.vmware.com/',
+  'C++': 'https://isocpp.org/',
+  HTML: 'https://developer.mozilla.org/docs/Web/HTML',
+  CSS: 'https://developer.mozilla.org/docs/Web/CSS',
+  JavaScript: 'https://developer.mozilla.org/docs/Web/JavaScript',
+  Git: 'https://git-scm.com/',
+  SQL: 'https://en.wikipedia.org/wiki/SQL',
+}

@@ -1,0 +1,85 @@
+:root {
+  /* Podklad a text */
+  --paper: #e1e8ef;
+  --paper-top: #e9eef3;
+  --panel: #f5f7f9;
+  --ink: #13233f;
+  --ink-soft: #4b5a72;
+  --line: #c3cdd8;
+  --backdrop: rgb(19 35 63 / 55%);
+  --shadow: rgb(19 35 63 / 35%);
+  --glow-strength: 16%;
+
+  /* Farby vodičov v kábli T568B, každá sekcia má svoj kábel */
+  --orange: #d7651c;
+  --green: #22844c;
+  --blue: #2557c7;
+  --brown: #7d4e2e;
+
+  --focus: #2557c7;
+
+  color-scheme: light;
+  font-family: Archivo, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tmavý režim: tmavomodrý ako rack v serverovni, káble svietia jasnejšie.
+   Režim nastavuje skript v index.html (uložená voľba, inak nastavenie systému). */
+:root[data-theme='dark'] {
+  --paper: #0e1828;
+  --paper-top: #121f33;
+  --panel: #172539;
+  --ink: #e4eaf2;
+  --ink-soft: #9eafc5;
+  --line: #2b3b55;
+  --backdrop: rgb(4 9 18 / 70%);
+  --shadow: rgb(0 0 0 / 55%);
+  --glow-strength: 22%;
+
+  --orange: #f0894a;
+  --green: #45b97a;
+  --blue: #6f9cff;
+  --brown: #c79268;
+
+  --focus: #6f9cff;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: var(--paper);
+  background-image: linear-gradient(
+    170deg,
+    var(--paper-top) 0%,
+    var(--paper) 45%,
+    color-mix(in srgb, var(--blue) 10%, var(--paper)) 100%
+  );
+  background-attachment: fixed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+:root[data-motion='off'] {
+  scroll-behavior: auto;
+}
